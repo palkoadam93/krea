@@ -176,7 +176,8 @@ h1 em {
   transition: 0.25s;
 }
 .card:hover {
-  background: #111411;
+  /*background: #111411;*/
+  background:#292c29;
 }
 .no {
   font: 11px "DM Mono";

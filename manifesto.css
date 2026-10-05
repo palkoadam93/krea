@@ -1,0 +1,367 @@
+/* =====================================================
+   KREA — KONCEPCIÓ
+   A meglévő világos .manifesto szekcióhoz
+   ===================================================== */
+
+#modell.manifesto {
+  position: relative;
+  overflow: hidden;
+  background: #f1efe8;
+  color: #090a09;
+}
+
+
+/* Finom dekoráció a háttérben */
+
+#modell.manifesto::after {
+  content: "KREA";
+  position: absolute;
+  right: -0.05em;
+  top: 250px;
+
+  font-size: clamp(160px, 25vw, 430px);
+  font-weight: 800;
+  line-height: 1;
+
+  letter-spacing: -0.09em;
+
+  color: rgba(9, 10, 9, 0.025);
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* =====================================================
+   BEKEZDÉSEK
+   ===================================================== */
+
+#modell.manifesto > p {
+  position: relative;
+  z-index: 1;
+
+  max-width: 800px;
+
+  margin-left: auto;
+  margin-right: 7%;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  padding: 30px 0;
+
+  font-size: clamp(17px, 1.35vw, 21px);
+  line-height: 1.8;
+
+  color: #555851;
+
+  border-bottom: 1px solid rgba(9, 10, 9, 0.12);
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+/* Finom mozgás */
+
+#modell.manifesto > p:hover {
+  color: #090a09;
+  transform: translateX(-8px);
+}
+
+
+/* =====================================================
+   ELSŐ BEKEZDÉS
+   ===================================================== */
+
+#modell.manifesto > h2 + p {
+  margin-top: 85px;
+
+  padding: 0 0 45px 32px;
+
+  font-size: clamp(21px, 1.8vw, 28px);
+  line-height: 1.6;
+
+  color: #171817;
+
+  border-left: 3px solid var(--acid);
+  border-bottom: none;
+}
+
+
+/* =====================================================
+   "A kiindulópont mindig egy ÖTLET."
+   ===================================================== */
+
+#modell.manifesto > p:nth-of-type(2) {
+  padding-top: 55px;
+  padding-bottom: 55px;
+
+  font-size: clamp(28px, 3vw, 48px);
+  line-height: 1.2;
+  letter-spacing: -0.04em;
+
+  color: #090a09;
+
+  border-bottom: none;
+}
+
+#modell.manifesto > p:nth-of-type(2) strong {
+  display: inline-block;
+
+  color: #090a09;
+  background: var(--acid);
+
+  padding: 0.02em 0.18em;
+
+  font-size: 1.08em;
+  font-weight: 700;
+
+  transform: rotate(-1deg);
+}
+
+
+/* =====================================================
+   STRONG KIEMELÉSEK
+   ===================================================== */
+
+#modell.manifesto p strong {
+  color: #090a09;
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   H3 — NAGY MANIFESTO ÁLLÍTÁSOK
+   ===================================================== */
+
+#modell.manifesto > h3 {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1180px;
+
+  margin: 100px auto 55px;
+  padding: 45px 0;
+
+  font-size: clamp(38px, 5vw, 78px);
+  line-height: 1;
+  letter-spacing: -0.06em;
+
+  color: #090a09;
+
+  border-top: 1px solid rgba(9, 10, 9, 0.22);
+  border-bottom: 1px solid rgba(9, 10, 9, 0.22);
+}
+
+
+/* Kis acid jel */
+
+#modell.manifesto > h3::before {
+  content: "";
+
+  display: block;
+
+  width: 45px;
+  height: 6px;
+
+  margin-bottom: 26px;
+
+  background: var(--acid);
+}
+
+
+/* =====================================================
+   EGY PROJEKT. TÖBB SZAKMA.
+   ===================================================== */
+
+#modell.manifesto > h3:first-of-type {
+  font-size: clamp(50px, 7vw, 105px);
+}
+
+#modell.manifesto > h3:first-of-type::after {
+  content: "01";
+
+  position: absolute;
+  right: 0;
+  top: 24px;
+
+  font: 11px "DM Mono";
+  letter-spacing: 0.15em;
+
+  color: #888b84;
+}
+
+
+/* =====================================================
+   FOLYAMAT
+   Ötlet → tervezés → ...
+   ===================================================== */
+
+#modell.manifesto > h3:nth-of-type(2) {
+  padding: 55px 0;
+
+  font-family: "DM Mono", monospace;
+  font-size: clamp(20px, 2.6vw, 38px);
+  font-weight: 500;
+
+  line-height: 1.6;
+  letter-spacing: -0.035em;
+}
+
+#modell.manifesto > h3:nth-of-type(2)::before {
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    var(--acid) 0%,
+    var(--acid) 35%,
+    rgba(9, 10, 9, 0.1) 35%
+  );
+}
+
+#modell.manifesto > h3:nth-of-type(2)::after {
+  content: "02";
+
+  position: absolute;
+  right: 0;
+  top: 25px;
+
+  font: 11px "DM Mono";
+  letter-spacing: 0.15em;
+
+  color: #888b84;
+}
+
+
+/* =====================================================
+   UTOLSÓ KREA MANIFESTO
+   ===================================================== */
+
+#modell.manifesto > h3:last-of-type {
+  max-width: none;
+
+  margin:
+    120px
+    -5vw
+    -120px;
+
+  padding:
+    110px
+    5vw
+    120px;
+
+  background: var(--acid);
+  color: #090a09;
+
+  border: none;
+
+  font-size: clamp(48px, 7vw, 110px);
+  line-height: 0.95;
+
+  letter-spacing: -0.07em;
+}
+
+
+/* KREA / MANIFESTO kis felirat */
+
+#modell.manifesto > h3:last-of-type::before {
+  content: "KREA / MANIFESTO";
+
+  width: auto;
+  height: auto;
+
+  margin-bottom: 40px;
+
+  background: transparent;
+
+  font: 11px "DM Mono";
+  font-weight: 500;
+
+  letter-spacing: 0.15em;
+}
+
+
+/* A korábbi 01/02 számozást itt ne jelenítse meg */
+
+#modell.manifesto > h3:last-of-type::after {
+  display: none;
+}
+
+
+/* =====================================================
+   MOBIL
+   ===================================================== */
+
+@media (max-width: 800px) {
+
+  #modell.manifesto > p {
+    max-width: 100%;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    padding: 24px 0;
+
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  #modell.manifesto > p:hover {
+    transform: none;
+  }
+
+  #modell.manifesto > h2 + p {
+    margin-top: 55px;
+
+    padding:
+      0
+      0
+      35px
+      20px;
+
+    font-size: 19px;
+  }
+
+  #modell.manifesto > p:nth-of-type(2) {
+    padding: 40px 0;
+
+    font-size: 29px;
+  }
+
+  #modell.manifesto > h3 {
+    margin: 65px 0 40px;
+    padding: 35px 0;
+
+    font-size: 40px;
+  }
+
+  #modell.manifesto > h3:first-of-type {
+    font-size: 50px;
+  }
+
+  #modell.manifesto > h3:nth-of-type(2) {
+    font-size: 19px;
+    line-height: 1.7;
+  }
+
+  #modell.manifesto > h3:last-of-type {
+    margin:
+      80px
+      -5vw
+      -120px;
+
+    padding:
+      75px
+      5vw
+      90px;
+
+    font-size: 49px;
+  }
+
+  #modell.manifesto::after {
+    font-size: 220px;
+    top: 500px;
+  }
+}
