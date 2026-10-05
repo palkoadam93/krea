@@ -3,29 +3,24 @@
 
 /* =====================================================
    KREA — DESIGN SYSTEM
-
-   Fő színek:
-   grafit      #181818
-   törtfehér   #f5f5f2
-   sárga       #ffd400
    ===================================================== */
 
 :root {
-  --bg: #181818;
+  --bg: #202020;
   --panel: #202020;
-  --panel-light: #262626;
+  --panel-light: #282828;
 
   --fg: #f5f5f2;
   --muted: #a6a6a2;
 
-  --line: #363636;
+  --line: #3a3a3a;
 
   --yellow: #ffd400;
 
   --light-bg: #f5f5f2;
-  --light-fg: #181818;
+  --light-fg: #202020;
   --light-muted: #666662;
-  --light-line: rgba(24, 24, 24, 0.15);
+  --light-line: rgba(32, 32, 32, 0.15);
 }
 
 
@@ -62,7 +57,6 @@ a {
 
 .nav {
   position: fixed;
-
   z-index: 20;
 
   left: 0;
@@ -70,15 +64,14 @@ a {
   top: 0;
 
   display: flex;
-
   justify-content: space-between;
   align-items: center;
 
   padding: 22px 5vw;
 
   background: linear-gradient(
-    rgba(24, 24, 24, 0.96),
-    rgba(24, 24, 24, 0)
+    rgba(32, 32, 32, 0.96),
+    rgba(32, 32, 32, 0)
   );
 
   backdrop-filter: blur(9px);
@@ -88,25 +81,21 @@ a {
 .logo {
   font-size: 21px;
   font-weight: 800;
-
   letter-spacing: -0.05em;
 }
 
 .logo i {
   font-style: normal;
-
   color: var(--yellow);
 }
 
 .links {
   display: flex;
-
   gap: 28px;
 
   font: 11px "DM Mono", monospace;
 
   text-transform: uppercase;
-
   letter-spacing: 0.12em;
 
   color: #b0b0ac;
@@ -131,21 +120,18 @@ a {
   padding: 150px 5vw 72px;
 
   display: flex;
-
   flex-direction: column;
-
   justify-content: end;
 
   position: relative;
-
   overflow: hidden;
 
   background:
     linear-gradient(
       90deg,
-      rgba(24, 24, 24, 0.96) 0%,
-      rgba(24, 24, 24, 0.78) 50%,
-      rgba(24, 24, 24, 0.42)
+      rgba(32, 32, 32, 0.96) 0%,
+      rgba(32, 32, 32, 0.78) 50%,
+      rgba(32, 32, 32, 0.42)
     ),
     url("https://d2xsxph8kpxj0f.cloudfront.net/310519663142720421/3i4DnXDAogxX5kvS365teZ/studio_recording-9fJHemDGfZTq2rbLzXYegZ.webp")
       center / cover;
@@ -175,7 +161,6 @@ a {
 
 .hero > * {
   position: relative;
-
   z-index: 1;
 }
 
@@ -192,7 +177,6 @@ a {
   font: 11px "DM Mono", monospace;
 
   letter-spacing: 0.15em;
-
   text-transform: uppercase;
 
   margin-bottom: 24px;
@@ -204,9 +188,7 @@ h1 {
   margin: 0;
 
   font-size: clamp(70px, 12vw, 174px);
-
   line-height: 0.82;
-
   letter-spacing: -0.08em;
 
   max-width: 1200px;
@@ -214,7 +196,6 @@ h1 {
 
 h1 em {
   font-style: normal;
-
   color: var(--yellow);
 }
 
@@ -222,12 +203,10 @@ h1 em {
   position: relative;
 
   display: flex;
-
   justify-content: space-between;
+  align-items: end;
 
   gap: 35px;
-
-  align-items: end;
 
   margin-top: 52px;
 
@@ -238,7 +217,6 @@ h1 em {
   max-width: 670px;
 
   font-size: 18px;
-
   line-height: 1.65;
 
   color: #d2d2ce;
@@ -250,14 +228,13 @@ h1 em {
    ===================================================== */
 
 .btn {
-  border: 1px solid #6a6a66;
+  border: 1px solid #70706c;
 
   padding: 15px 21px;
 
   font: 11px "DM Mono", monospace;
 
   letter-spacing: 0.12em;
-
   text-transform: uppercase;
 
   white-space: nowrap;
@@ -270,9 +247,7 @@ h1 em {
 
 .btn:hover {
   background: var(--yellow);
-
-  color: #181818;
-
+  color: var(--bg);
   border-color: var(--yellow);
 }
 
@@ -283,7 +258,6 @@ h1 em {
 
 .manifesto {
   background: var(--light-bg);
-
   color: var(--light-fg);
 
   padding: 120px 5vw;
@@ -299,9 +273,7 @@ h1 em {
   max-width: 1150px;
 
   font-size: clamp(48px, 7.4vw, 104px);
-
   line-height: 0.95;
-
   letter-spacing: -0.07em;
 
   font-weight: 600;
@@ -318,11 +290,9 @@ h1 em {
 
 #modell.manifesto {
   position: relative;
-
   overflow: hidden;
 
   background: var(--light-bg);
-
   color: var(--light-fg);
 }
 
@@ -337,21 +307,17 @@ h1 em {
   position: absolute;
 
   right: -0.05em;
-
   top: 250px;
 
   font-size: clamp(160px, 25vw, 430px);
-
   font-weight: 800;
-
   line-height: 1;
 
   letter-spacing: -0.09em;
 
-  color: rgba(24, 24, 24, 0.035);
+  color: rgba(32, 32, 32, 0.035);
 
   pointer-events: none;
-
   user-select: none;
 }
 
@@ -362,23 +328,18 @@ h1 em {
 
 #modell.manifesto > p {
   position: relative;
-
   z-index: 1;
 
   max-width: 800px;
 
   margin-left: auto;
-
   margin-right: 7%;
-
   margin-top: 0;
-
   margin-bottom: 0;
 
   padding: 30px 0;
 
   font-size: clamp(17px, 1.35vw, 21px);
-
   line-height: 1.8;
 
   color: #595955;
@@ -391,8 +352,7 @@ h1 em {
 }
 
 #modell.manifesto > p:hover {
-  color: #181818;
-
+  color: var(--light-fg);
   transform: translateX(-8px);
 }
 
@@ -404,20 +364,14 @@ h1 em {
 #modell.manifesto > h2 + p {
   margin-top: 85px;
 
-  padding:
-    0
-    0
-    45px
-    32px;
+  padding: 0 0 45px 32px;
 
   font-size: clamp(21px, 1.8vw, 28px);
-
   line-height: 1.6;
 
   color: #242424;
 
   border-left: 3px solid var(--yellow);
-
   border-bottom: none;
 }
 
@@ -428,16 +382,13 @@ h1 em {
 
 #modell.manifesto > p:nth-of-type(2) {
   padding-top: 55px;
-
   padding-bottom: 55px;
 
   font-size: clamp(28px, 3vw, 48px);
-
   line-height: 1.2;
-
   letter-spacing: -0.04em;
 
-  color: #181818;
+  color: var(--light-fg);
 
   border-bottom: none;
 }
@@ -445,14 +396,12 @@ h1 em {
 #modell.manifesto > p:nth-of-type(2) strong {
   display: inline-block;
 
-  color: #181818;
-
+  color: var(--bg);
   background: var(--yellow);
 
   padding: 0.02em 0.18em;
 
   font-size: 1.08em;
-
   font-weight: 700;
 
   transform: rotate(-1deg);
@@ -464,8 +413,7 @@ h1 em {
    ===================================================== */
 
 #modell.manifesto p strong {
-  color: #181818;
-
+  color: var(--light-fg);
   font-weight: 700;
 }
 
@@ -476,30 +424,22 @@ h1 em {
 
 #modell.manifesto > h3 {
   position: relative;
-
   z-index: 2;
 
   max-width: 1180px;
 
   margin: 100px auto 55px;
-
   padding: 45px 0;
 
   font-size: clamp(38px, 5vw, 78px);
-
   line-height: 1;
-
   letter-spacing: -0.06em;
 
-  color: #181818;
+  color: var(--light-fg);
 
-  border-top: 1px solid rgba(24, 24, 24, 0.22);
-
-  border-bottom: 1px solid rgba(24, 24, 24, 0.22);
+  border-top: 1px solid rgba(32, 32, 32, 0.22);
+  border-bottom: 1px solid rgba(32, 32, 32, 0.22);
 }
-
-
-/* Kis sárga jel */
 
 #modell.manifesto > h3::before {
   content: "";
@@ -507,7 +447,6 @@ h1 em {
   display: block;
 
   width: 45px;
-
   height: 6px;
 
   margin-bottom: 26px;
@@ -530,11 +469,9 @@ h1 em {
   position: absolute;
 
   right: 0;
-
   top: 24px;
 
   font: 11px "DM Mono", monospace;
-
   letter-spacing: 0.15em;
 
   color: #888884;
@@ -551,24 +488,21 @@ h1 em {
   font-family: "DM Mono", monospace;
 
   font-size: clamp(20px, 2.6vw, 38px);
-
   font-weight: 500;
 
   line-height: 1.6;
-
   letter-spacing: -0.035em;
 }
 
 #modell.manifesto > h3:nth-of-type(2)::before {
   width: 100%;
-
   height: 2px;
 
   background: linear-gradient(
     90deg,
     var(--yellow) 0%,
     var(--yellow) 35%,
-    rgba(24, 24, 24, 0.10) 35%
+    rgba(32, 32, 32, 0.10) 35%
   );
 }
 
@@ -578,11 +512,9 @@ h1 em {
   position: absolute;
 
   right: 0;
-
   top: 25px;
 
   font: 11px "DM Mono", monospace;
-
   letter-spacing: 0.15em;
 
   color: #888884;
@@ -607,15 +539,12 @@ h1 em {
     120px;
 
   background: var(--yellow);
-
-  color: #181818;
+  color: var(--bg);
 
   border: none;
 
   font-size: clamp(48px, 7vw, 110px);
-
   line-height: 0.95;
-
   letter-spacing: -0.07em;
 }
 
@@ -623,7 +552,6 @@ h1 em {
   content: "KREA / MANIFESTO";
 
   width: auto;
-
   height: auto;
 
   margin-bottom: 40px;
@@ -631,7 +559,6 @@ h1 em {
   background: transparent;
 
   font: 11px "DM Mono", monospace;
-
   font-weight: 500;
 
   letter-spacing: 0.15em;
@@ -652,15 +579,12 @@ h1 em {
 
 .head {
   max-width: 900px;
-
   margin-bottom: 62px;
 }
 
 .head h2 {
   font-size: clamp(44px, 6vw, 86px);
-
   line-height: 0.94;
-
   letter-spacing: -0.065em;
 
   margin: 0 0 24px;
@@ -672,7 +596,6 @@ h1 em {
   color: var(--muted);
 
   font-size: 17px;
-
   line-height: 1.7;
 }
 
@@ -683,11 +606,9 @@ h1 em {
 
 .grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
 
   border-left: 1px solid var(--line);
-
   border-top: 1px solid var(--line);
 }
 
@@ -702,41 +623,37 @@ h1 em {
   padding: 35px;
 
   border-right: 1px solid var(--line);
-
   border-bottom: 1px solid var(--line);
 
   background: var(--bg);
 
   transition:
     background 0.25s ease,
-    color 0.25s ease,
-    transform 0.25s ease;
+    color 0.25s ease;
 }
 
 .card:hover {
   background: var(--yellow);
-
-  color: #181818;
+  color: var(--bg);
 }
 
 .no {
   font: 11px "DM Mono", monospace;
 
-  color: #777773;
+  color: #7d7d79;
 
   transition: color 0.25s ease;
 }
 
 .card h3 {
   font-size: 34px;
-
   letter-spacing: -0.05em;
 
   margin: 48px 0 12px;
 }
 
 .card p {
-  color: #a6a6a2;
+  color: var(--muted);
 
   line-height: 1.65;
 
@@ -747,7 +664,7 @@ h1 em {
 
 .card:hover .no,
 .card:hover p {
-  color: #343434;
+  color: #3a3a38;
 }
 
 
@@ -757,7 +674,6 @@ h1 em {
 
 .tags {
   display: flex;
-
   flex-wrap: wrap;
 
   gap: 7px;
@@ -770,25 +686,24 @@ h1 em {
 
   color: #aaaaa6;
 
-  border: 1px solid #454545;
+  border: 1px solid #4a4a4a;
 
   padding: 7px 9px;
 
   transition:
     color 0.25s ease,
-    border-color 0.25s ease,
-    background 0.25s ease;
+    border-color 0.25s ease;
 }
 
 .card:hover .tag {
-  color: #181818;
-
-  border-color: #181818;
+  color: var(--bg);
+  border-color: var(--bg);
 }
 
 
 /* =====================================================
-   FEATURE
+   ÖKOSZISZTÉMA / FEATURE
+   EZ ADJA AZ EGÉSZ OLDAL SÖTÉT ALAPSZÍNÉT
    ===================================================== */
 
 .feature {
@@ -797,17 +712,16 @@ h1 em {
   border: 1px solid var(--line);
 
   display: grid;
-
   grid-template-columns: 1.08fr 0.92fr;
 
   min-height: 540px;
 
-  background: var(--panel);
+  background: var(--bg);
 }
 
 
 /* =====================================================
-   FEATURE VISUAL
+   ÖKOSZISZTÉMA — VISUAL
    ===================================================== */
 
 .visual {
@@ -824,12 +738,10 @@ h1 em {
       rgba(245, 245, 242, 0.07),
       transparent 30%
     ),
-    #202020;
+    var(--bg);
 
   display: flex;
-
   justify-content: center;
-
   align-items: center;
 
   overflow: hidden;
@@ -842,11 +754,9 @@ h1 em {
 
 .orbit {
   width: 310px;
-
   height: 310px;
 
-  border: 1px solid #70706c;
-
+  border: 1px solid #747470;
   border-radius: 50%;
 
   position: relative;
@@ -860,8 +770,7 @@ h1 em {
 
   position: absolute;
 
-  border: 1px solid #70706c;
-
+  border: 1px solid #747470;
   border-radius: 50%;
 
   inset: 42px;
@@ -871,7 +780,6 @@ h1 em {
 
 .orbit::after {
   inset: 88px;
-
   transform: rotate(-63deg);
 }
 
@@ -879,11 +787,9 @@ h1 em {
   position: absolute;
 
   left: 50%;
-
   top: 50%;
 
   width: 65px;
-
   height: 65px;
 
   border-radius: 50%;
@@ -908,9 +814,7 @@ h1 em {
 
 .copy h2 {
   font-size: 58px;
-
   line-height: 0.93;
-
   letter-spacing: -0.06em;
 
   margin: 10px 0 25px;
@@ -918,7 +822,6 @@ h1 em {
 
 .copy p {
   color: var(--muted);
-
   line-height: 1.72;
 }
 
@@ -933,11 +836,9 @@ h1 em {
 
 .flow {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
 
   border-left: 1px solid var(--line);
-
   border-top: 1px solid var(--line);
 }
 
@@ -947,7 +848,6 @@ h1 em {
   padding: 30px;
 
   border-right: 1px solid var(--line);
-
   border-bottom: 1px solid var(--line);
 
   background: var(--bg);
@@ -963,13 +863,11 @@ h1 em {
 
 .step h3 {
   font-size: 28px;
-
   letter-spacing: -0.04em;
 }
 
 .step p {
   color: #999995;
-
   line-height: 1.6;
 }
 
@@ -984,9 +882,7 @@ h1 em {
 
 .quote p {
   font-size: clamp(36px, 5.5vw, 78px);
-
   line-height: 1.02;
-
   letter-spacing: -0.055em;
 
   max-width: 1150px;
@@ -1005,7 +901,6 @@ h1 em {
 
 .photo-strip {
   display: grid;
-
   grid-template-columns: 1.35fr 0.65fr;
 
   gap: 12px;
@@ -1021,7 +916,7 @@ h1 em {
 
   position: relative;
 
-  background: var(--panel);
+  background: var(--bg);
 }
 
 .photo-main {
@@ -1030,7 +925,6 @@ h1 em {
 
 .photo-stack {
   display: grid;
-
   gap: 12px;
 }
 
@@ -1046,7 +940,6 @@ h1 em {
 .photo-strip img,
 .image-card img {
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
@@ -1076,17 +969,14 @@ h1 em {
   position: absolute;
 
   left: 24px;
-
   bottom: 22px;
 
   font: 11px "DM Mono", monospace;
 
   letter-spacing: 0.12em;
-
   text-transform: uppercase;
 
-  color: #181818;
-
+  color: var(--bg);
   background: var(--yellow);
 
   padding: 9px 11px;
@@ -1099,7 +989,6 @@ h1 em {
 
 .image-grid {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
 
   gap: 12px;
@@ -1109,10 +998,9 @@ h1 em {
   min-height: 460px;
 
   position: relative;
-
   overflow: hidden;
 
-  background: var(--panel);
+  background: var(--bg);
 }
 
 .image-card .shade {
@@ -1122,7 +1010,7 @@ h1 em {
 
   background: linear-gradient(
     transparent 35%,
-    rgba(24, 24, 24, 0.96)
+    rgba(32, 32, 32, 0.96)
   );
 }
 
@@ -1130,7 +1018,6 @@ h1 em {
   position: absolute;
 
   left: 28px;
-
   bottom: 26px;
 }
 
@@ -1159,7 +1046,6 @@ h1 em {
   border-top: 1px solid var(--line);
 
   display: flex;
-
   justify-content: space-between;
 
   color: #888884;
@@ -1188,7 +1074,6 @@ h1 em {
 
   .btn {
     display: inline-block;
-
     margin-top: 22px;
   }
 
@@ -1210,21 +1095,17 @@ h1 em {
   }
 
 
-  /* =========================
-     MODELL
-     ========================= */
+  /* MODELL */
 
   #modell.manifesto > p {
     max-width: 100%;
 
     margin-left: 0;
-
     margin-right: 0;
 
     padding: 24px 0;
 
     font-size: 16px;
-
     line-height: 1.75;
   }
 
@@ -1235,11 +1116,7 @@ h1 em {
   #modell.manifesto > h2 + p {
     margin-top: 55px;
 
-    padding:
-      0
-      0
-      35px
-      20px;
+    padding: 0 0 35px 20px;
 
     font-size: 19px;
   }
@@ -1264,7 +1141,6 @@ h1 em {
 
   #modell.manifesto > h3:nth-of-type(2) {
     font-size: 19px;
-
     line-height: 1.7;
   }
 
@@ -1284,14 +1160,11 @@ h1 em {
 
   #modell.manifesto::after {
     font-size: 220px;
-
     top: 500px;
   }
 
 
-  /* =========================
-     IMAGES
-     ========================= */
+  /* IMAGES */
 
   .photo-strip,
   .image-grid {
@@ -1320,7 +1193,6 @@ h1 em {
 
   .footer {
     gap: 18px;
-
     flex-direction: column;
   }
 }
