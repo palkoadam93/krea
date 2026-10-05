@@ -1,0 +1,63 @@
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.card {
+  position: relative;
+  min-height: 300px;
+  padding: 35px;
+  overflow: hidden;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 0;
+  background: var(--blue);
+  transition: height 0.3s ease;
+}
+
+.card:hover {
+  background: #f7f8f6;
+  transform: translateY(-3px);
+}
+
+.card:hover::before {
+  height: 100%;
+}
+
+.no {
+  font: 11px "DM Mono";
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.card h3 {
+  font-size: 34px;
+  letter-spacing: -0.05em;
+  margin: 48px 0 12px;
+}
+
+.card p {
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 590px;
+}

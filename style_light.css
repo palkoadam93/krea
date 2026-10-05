@@ -1,13 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
 
-@import url("css/base.css");
-@import url("css/nav.css");
-@import url("css/hero.css");
-@import url("css/manifesto.css");
-@import url("css/workshops.css");
-@import url("css/feature.css");
-@import url("css/process.css");
-@import url("css/gallery.css");
-@import url("css/quote.css");
-@import url("css/footer.css");
-@import url("css/responsive.css");
+@import url("light/base.css");
+@import url("light/nav.css");
+@import url("light/hero.css");
+
+@import url("light/manifesto.css");
+@import url("light/manifesto_2.css");
+
+@import url("light/workshops.css");
+@import url("light/feature.css");
+@import url("light/process.css");
+@import url("light/gallery.css");
+@import url("light/quote.css");
+@import url("light/footer.css");
+@import url("light/responsive.css");

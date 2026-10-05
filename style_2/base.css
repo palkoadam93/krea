@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap");
+@import url("manifesto_2.css");
+
+/* =========================================================
+   KREA — BRIGHT DIGITAL / CREATIVE TECH
+   ========================================================= */
+
+:root {
+  --bg: #f1f2f0;
+  --panel: #ffffff;
+  --panel-2: #e6e8e5;
+
+  --fg: #0a0b0a;
+  --muted: #555a55;
+  --soft: #7b807b;
+
+  --line: #c6cac5;
+  --line-dark: #929891;
+
+  /* KREA brand accents */
+  --acid: #c7ff00;
+  --acid-dark: #7ca600;
+
+  --blue: #0047ff;
+  --blue-dark: #0031b8;
+
+  --white: #ffffff;
+  --black: #080908;
+}
