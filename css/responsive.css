@@ -1,0 +1,132 @@
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .links {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 130px;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(241, 242, 240, 0.54) 0%,
+        rgba(241, 242, 240, 0.80) 46%,
+        rgba(241, 242, 240, 0.98) 100%
+      ),
+      url("https://d2xsxph8kpxj0f.cloudfront.net/310519663142720421/3i4DnXDAogxX5kvS365teZ/studio_recording-9fJHemDGfZTq2rbLzXYegZ.webp")
+        center / cover;
+  }
+
+  .hero-foot {
+    display: block;
+  }
+
+  .btn {
+    margin-top: 22px;
+  }
+
+  .grid,
+  .feature {
+    grid-template-columns: 1fr;
+  }
+
+  .flow {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .copy {
+    padding: 40px;
+  }
+
+  .copy h2 {
+    font-size: 45px;
+  }
+
+  .visual {
+    min-height: 450px;
+  }
+
+  .photo-strip,
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-main {
+    min-height: 460px;
+  }
+
+  .photo-stack figure {
+    min-height: 280px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+  .nav {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .hero {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .hero h1 {
+    font-size: clamp(58px, 20vw, 90px);
+  }
+
+  .section,
+  .manifesto,
+  .quote {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flow {
+    grid-template-columns: 1fr;
+  }
+
+  .copy {
+    padding: 32px;
+  }
+
+  .copy h2 {
+    font-size: 40px;
+  }
+
+  .visual {
+    min-height: 380px;
+  }
+
+  .orbit {
+    width: 240px;
+    height: 240px;
+  }
+
+  .photo-strip {
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+
+  .footer {
+    gap: 18px;
+    flex-direction: column;
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+}

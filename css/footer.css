@@ -1,0 +1,18 @@
+.footer {
+  padding: 45px 5vw;
+  border-top: 1px solid #222;
+  display: flex;
+  justify-content: space-between;
+  color: #a9ada9;
+  font: 11px "DM Mono";
+  background: var(--black);
+}
+
+.footer a {
+  color: var(--white);
+  transition: color 0.2s ease;
+}
+
+.footer a:hover {
+  color: var(--acid);
+}

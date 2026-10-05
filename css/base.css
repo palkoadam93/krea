@@ -1,0 +1,123 @@
+:root {
+  --bg: #f1f2f0;
+  --panel: #ffffff;
+  --panel-2: #e6e8e5;
+
+  --fg: #0a0b0a;
+  --muted: #555a55;
+  --soft: #7b807b;
+
+  --line: #c6cac5;
+  --line-dark: #929891;
+
+  --acid: #c7ff00;
+  --acid-dark: #7ca600;
+
+  --blue: #0047ff;
+  --blue-dark: #0031b8;
+
+  --white: #ffffff;
+  --black: #080908;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  background: var(--bg);
+  color: var(--fg);
+
+  font-family:
+    Manrope,
+    Arial,
+    sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.section {
+  padding: 120px 5vw;
+}
+
+.head {
+  max-width: 900px;
+  margin-bottom: 62px;
+}
+
+.head h2 {
+  font-size: clamp(44px, 6vw, 86px);
+  line-height: 0.94;
+  letter-spacing: -0.065em;
+
+  margin: 0 0 24px;
+}
+
+.head p {
+  max-width: 720px;
+
+  color: var(--muted);
+
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.eyebrow {
+  color: var(--blue);
+
+  font: 11px "DM Mono";
+  font-weight: 500;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  margin-bottom: 24px;
+}
+
+.btn {
+  display: inline-block;
+
+  border: 1px solid var(--black);
+
+  padding: 15px 21px;
+
+  font: 11px "DM Mono";
+  font-weight: 500;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+  background: transparent;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn:hover {
+  background: var(--acid);
+  color: var(--black);
+
+  border-color: var(--black);
+
+  transform: translateY(-2px);
+}
+
+::selection {
+  background: var(--acid);
+  color: var(--black);
+}

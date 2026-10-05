@@ -1,0 +1,50 @@
+.quote {
+  position: relative;
+
+  padding: 110px 5vw 135px;
+
+  overflow: hidden;
+
+  background: var(--black);
+
+  color: var(--white);
+}
+
+.quote::before {
+  content: "";
+
+  position: absolute;
+
+  width: 520px;
+  height: 520px;
+
+  right: -200px;
+  top: -220px;
+
+  border-radius: 50%;
+
+  background: var(--blue);
+
+  filter: blur(120px);
+
+  opacity: 0.55;
+}
+
+.quote p {
+  position: relative;
+
+  z-index: 1;
+
+  font-size: clamp(36px, 5.5vw, 78px);
+
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+
+  max-width: 1150px;
+
+  margin: 0;
+}
+
+.quote p span {
+  color: var(--acid);
+}

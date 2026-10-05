@@ -1,0 +1,83 @@
+.nav {
+  position: fixed;
+
+  z-index: 20;
+
+  left: 0;
+  right: 0;
+  top: 0;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 5vw;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(241, 242, 240, 0.98) 0%,
+      rgba(241, 242, 240, 0.91) 65%,
+      rgba(241, 242, 240, 0) 100%
+    );
+
+  backdrop-filter: blur(12px);
+}
+
+.logo {
+  font-size: 21px;
+  font-weight: 800;
+
+  letter-spacing: -0.05em;
+
+  color: var(--fg);
+}
+
+.logo i {
+  font-style: normal;
+  color: var(--blue);
+}
+
+.links {
+  display: flex;
+
+  gap: 28px;
+
+  font: 11px "DM Mono";
+
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+
+  color: var(--muted);
+}
+
+.links a {
+  position: relative;
+
+  transition: color 0.2s ease;
+}
+
+.links a:hover {
+  color: var(--blue);
+}
+
+.links a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -6px;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--acid);
+
+  transition: width 0.25s ease;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
