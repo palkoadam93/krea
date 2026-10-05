@@ -1,22 +1,16 @@
 .flow {
   display: grid;
-
   grid-template-columns: repeat(4, 1fr);
-
   border-left: 1px solid var(--line);
   border-top: 1px solid var(--line);
 }
 
 .step {
   min-height: 220px;
-
   padding: 30px;
-
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-
   background: var(--panel);
-
   transition:
     background 0.2s ease,
     color 0.2s ease;
@@ -28,13 +22,11 @@
 
 .step h3 {
   font-size: 28px;
-
   letter-spacing: -0.04em;
 }
 
 .step p {
   color: var(--muted);
-
   line-height: 1.6;
 }
 
