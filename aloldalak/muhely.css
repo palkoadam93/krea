@@ -114,6 +114,8 @@ a {
     margin: auto
 }
 
+.summary > p {font-weight: bold;}
+
 .label {
     font: 11px 'DM Mono';
     color: var(--green);
