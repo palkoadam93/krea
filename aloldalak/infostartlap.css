@@ -165,16 +165,11 @@ main > h1::after {
 /* KREA műhely címke */
 
 .cards-container article::before {
-    content: "KREA / JÁTÉK";
-
+    content: "KREA";
     display: block;
-
     margin-bottom: 25px;
-
     font: 10px 'DM Mono', monospace;
-
     color: var(--green);
-
     letter-spacing: .08em;
     text-transform: uppercase;
 }
