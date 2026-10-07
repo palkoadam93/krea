@@ -719,6 +719,10 @@ h1 em {
   background: var(--bg);
 }
 
+.feature:hover {
+  background: var(--panel-light);
+}
+
 
 /* =====================================================
    ÖKOSZISZTÉMA — VISUAL

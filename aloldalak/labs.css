@@ -1,0 +1,807 @@
+/* =========================================================
+   KREA LABS
+   Csak a Labs aloldal saját stílusai.
+   A globális design systemet a style.css biztosítja.
+   ========================================================= */
+
+
+/* =========================================================
+   LABS HERO
+   ========================================================= */
+
+.labs-hero {
+  position: relative;
+  min-height: 90vh;
+
+  display: flex;
+  align-items: flex-end;
+
+  padding: 150px 5vw 110px;
+
+  overflow: hidden;
+
+  border-bottom: 1px solid var(--line);
+}
+
+
+/* Nagy háttérfelirat */
+
+.labs-hero::after {
+  content: "LABS";
+
+  position: absolute;
+  right: -0.04em;
+  top: 50%;
+
+  transform: translateY(-53%);
+
+  font-size: clamp(190px, 33vw, 560px);
+  font-weight: 800;
+  line-height: 0.75;
+
+  letter-spacing: -0.09em;
+
+  color: rgba(245, 245, 242, 0.018);
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+.labs-hero__inner {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1380px;
+
+  margin: 0 auto;
+}
+
+
+/*
+  A style.css globális h1 szabályát
+  ezen az oldalon pontosítjuk.
+*/
+
+.labs-hero h1 {
+  margin: 28px 0 20px;
+
+  max-width: none;
+
+  font-size: clamp(72px, 13vw, 190px);
+  font-weight: 800;
+
+  line-height: 0.78;
+  letter-spacing: -0.075em;
+}
+
+
+.labs-lead {
+  margin: 40px 0 0;
+
+  max-width: 900px;
+
+  font-size: clamp(25px, 3.4vw, 50px);
+  font-weight: 500;
+
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+
+.labs-intro {
+  max-width: 700px;
+
+  margin: 65px 0 0 auto;
+
+  color: var(--muted);
+
+  font-size: clamp(16px, 1.5vw, 21px);
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   LAB LIST
+   ========================================================= */
+
+.labs {
+  width: 100%;
+}
+
+
+/* =========================================================
+   INDIVIDUAL LAB
+   ========================================================= */
+
+.lab {
+  position: relative;
+
+  display: grid;
+  grid-template-columns:
+    minmax(150px, 0.65fr)
+    minmax(0, 2fr);
+
+  gap: clamp(40px, 8vw, 140px);
+
+  max-width: 1380px;
+
+  margin: 0 auto;
+
+  padding: clamp(90px, 11vw, 170px) 5vw;
+
+  border-bottom: 1px solid var(--line);
+}
+
+
+/* =========================================================
+   LAB NUMBER
+   ========================================================= */
+
+.lab-number {
+  position: relative;
+
+  font-family: "DM Mono", monospace;
+
+  font-size: clamp(80px, 11vw, 170px);
+  font-weight: 500;
+
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+
+  color: var(--line);
+
+  transition:
+    color 0.45s ease,
+    transform 0.45s ease;
+}
+
+
+.lab:hover .lab-number {
+  color: var(--yellow);
+  transform: translateX(8px);
+}
+
+
+/* =========================================================
+   LAB CONTENT
+   ========================================================= */
+
+.lab-content {
+  max-width: 850px;
+}
+
+
+.lab-type {
+  display: inline-block;
+
+  color: var(--yellow);
+
+  font: 11px "DM Mono", monospace;
+
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+
+.lab-type::before {
+  content: "●";
+
+  margin-right: 10px;
+
+  font-size: 7px;
+  vertical-align: 1px;
+}
+
+
+.lab-content h2 {
+  margin: 20px 0 32px;
+
+  font-size: clamp(48px, 7vw, 100px);
+  font-weight: 700;
+
+  line-height: 0.92;
+  letter-spacing: -0.06em;
+}
+
+
+.lab .lab-lead {
+  max-width: 700px;
+
+  margin: 0 0 35px;
+
+  color: var(--fg);
+
+  font-size: clamp(21px, 2vw, 30px);
+  font-weight: 500;
+
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+
+.lab-content > p:not(.lab-lead) {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: clamp(16px, 1.3vw, 19px);
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   PRODUCTION FLOW
+   ========================================================= */
+
+.lab-flow {
+  position: relative;
+
+  margin-top: clamp(45px, 5vw, 70px);
+
+  padding: 24px 55px 24px 0;
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+
+  font-family: "DM Mono", monospace;
+  font-size: clamp(12px, 1vw, 15px);
+
+  line-height: 1.8;
+  letter-spacing: 0.025em;
+
+  color: var(--fg);
+}
+
+
+.lab-flow::after {
+  content: "→";
+
+  position: absolute;
+
+  right: 0;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: var(--yellow);
+
+  font-size: 24px;
+}
+
+
+/* =========================================================
+   TECHNOLOGY TAGS
+   ========================================================= */
+
+.lab-tech {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 28px;
+}
+
+
+.lab-tech span {
+  padding: 9px 14px;
+
+  border: 1px solid var(--line);
+  border-radius: 100px;
+
+  color: var(--muted);
+
+  font: 11px "DM Mono", monospace;
+
+  letter-spacing: 0.04em;
+
+  transition:
+    color 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+
+.lab-tech span:hover {
+  color: var(--bg);
+
+  background: var(--yellow);
+  border-color: var(--yellow);
+}
+
+
+/* =========================================================
+   VÁLTAKOZÓ LAB HÁTTÉR
+   ========================================================= */
+
+.lab:nth-of-type(even)::before {
+  content: "";
+
+  position: absolute;
+  z-index: -1;
+
+  top: 0;
+  bottom: 0;
+
+  left: 50%;
+
+  width: 100vw;
+
+  transform: translateX(-50%);
+
+  background: var(--panel-light);
+}
+
+
+/* =========================================================
+   LAB HOVER LINE
+   ========================================================= */
+
+.lab:not(.lab-featured)::after {
+  content: "";
+
+  position: absolute;
+
+  left: 5vw;
+  bottom: -1px;
+
+  width: 0;
+  height: 1px;
+
+  background: var(--yellow);
+
+  transition: width 0.6s cubic-bezier(.2, .8, .2, 1);
+}
+
+
+.lab:not(.lab-featured):hover::after {
+  width: calc(100% - 10vw);
+}
+
+
+/* =========================================================
+   MOTION LAB — FEATURED
+   ========================================================= */
+
+.lab-featured {
+  overflow: hidden;
+}
+
+
+.lab-featured::after {
+  content: "MOTION";
+
+  position: absolute;
+
+  right: -0.06em;
+  bottom: -0.14em;
+
+  font-size: clamp(110px, 20vw, 320px);
+  font-weight: 800;
+
+  line-height: 0.8;
+  letter-spacing: -0.08em;
+
+  color: rgba(255, 212, 0, 0.025);
+
+  pointer-events: none;
+}
+
+
+.lab-featured .lab-number {
+  color: var(--yellow);
+}
+
+
+/* =========================================================
+   ECOSYSTEM
+   ========================================================= */
+
+.labs-ecosystem {
+  position: relative;
+
+  padding: clamp(100px, 12vw, 180px) 5vw;
+
+  background: var(--yellow);
+  color: var(--bg);
+
+  overflow: hidden;
+}
+
+
+.labs-ecosystem::after {
+  content: "KREA";
+
+  position: absolute;
+
+  right: -0.06em;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: clamp(180px, 32vw, 520px);
+  font-weight: 800;
+
+  line-height: 0.8;
+  letter-spacing: -0.09em;
+
+  color: rgba(32, 32, 32, 0.045);
+
+  pointer-events: none;
+}
+
+
+.labs-ecosystem > * {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1380px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.labs-ecosystem .eyebrow {
+  color: var(--bg);
+}
+
+
+.labs-ecosystem h2 {
+  max-width: 1000px;
+
+  margin: clamp(35px, 5vw, 70px) auto 35px;
+
+  font-size: clamp(55px, 9vw, 135px);
+  font-weight: 800;
+
+  line-height: 0.88;
+  letter-spacing: -0.07em;
+}
+
+
+.labs-ecosystem > p {
+  max-width: 700px;
+
+  margin: 0 auto clamp(70px, 8vw, 120px);
+
+  font-size: clamp(18px, 1.5vw, 22px);
+  line-height: 1.65;
+
+  opacity: 0.72;
+}
+
+
+/* =========================================================
+   ECOSYSTEM PROJECTS
+   ========================================================= */
+
+.ecosystem-projects {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  max-width: 1380px;
+
+  margin: 0 auto;
+
+  border-top: 1px solid rgba(32, 32, 32, 0.25);
+}
+
+
+.ecosystem-projects article {
+  min-height: 190px;
+
+  padding: 30px clamp(20px, 3vw, 45px) 35px 0;
+
+  border-bottom: 1px solid rgba(32, 32, 32, 0.25);
+}
+
+
+.ecosystem-projects article:nth-child(odd) {
+  padding-right: clamp(30px, 5vw, 70px);
+
+  border-right: 1px solid rgba(32, 32, 32, 0.25);
+}
+
+
+.ecosystem-projects article:nth-child(even) {
+  padding-left: clamp(30px, 5vw, 70px);
+}
+
+
+.ecosystem-projects span {
+  display: block;
+
+  margin-bottom: 30px;
+
+  font: 11px "DM Mono", monospace;
+  font-weight: 500;
+
+  letter-spacing: 0.12em;
+}
+
+
+.ecosystem-projects strong {
+  display: block;
+
+  max-width: 500px;
+
+  font-size: clamp(19px, 2vw, 28px);
+  font-weight: 600;
+
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+}
+
+
+/* =========================================================
+   PARTNER NETWORK
+   ========================================================= */
+
+.labs-partners {
+  position: relative;
+
+  padding: clamp(110px, 14vw, 210px) 5vw;
+
+  text-align: center;
+
+  overflow: hidden;
+}
+
+
+.labs-partners::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(255, 212, 0, 0.07);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.labs-partners::after {
+  content: "";
+
+  position: absolute;
+
+  width: 900px;
+  height: 900px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border: 1px solid rgba(255, 212, 0, 0.035);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.labs-partners > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+.labs-partners h2 {
+  max-width: 1000px;
+
+  margin: 40px auto 35px;
+
+  font-size: clamp(55px, 9vw, 130px);
+  font-weight: 800;
+
+  line-height: 0.9;
+  letter-spacing: -0.07em;
+}
+
+
+.labs-partners > p {
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: var(--muted);
+
+  font-size: clamp(17px, 1.5vw, 21px);
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   PARTNER FLOW
+   ========================================================= */
+
+.partner-flow {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: clamp(15px, 2.5vw, 35px);
+
+  max-width: 1000px;
+
+  margin: clamp(65px, 8vw, 110px) auto 0;
+  padding: 30px;
+
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+
+  font: 11px "DM Mono", monospace;
+
+  font-size: clamp(12px, 1.2vw, 16px);
+  letter-spacing: 0.07em;
+}
+
+
+.partner-flow span {
+  color: var(--yellow);
+
+  font-size: 22px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .labs-hero {
+    min-height: 75vh;
+
+    padding-top: 130px;
+  }
+
+
+  .lab {
+    grid-template-columns: 105px 1fr;
+
+    gap: 35px;
+  }
+
+
+  .lab-number {
+    font-size: 80px;
+  }
+
+
+  .ecosystem-projects {
+    grid-template-columns: 1fr;
+  }
+
+
+  .ecosystem-projects article:nth-child(odd) {
+    padding-right: 0;
+
+    border-right: 0;
+  }
+
+
+  .ecosystem-projects article:nth-child(even) {
+    padding-left: 0;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+  .labs-hero {
+    min-height: auto;
+
+    padding: 135px 5vw 80px;
+  }
+
+
+  .labs-hero h1 {
+    font-size: clamp(62px, 22vw, 100px);
+  }
+
+
+  .labs-lead {
+    margin-top: 30px;
+  }
+
+
+  .labs-intro {
+    margin-top: 50px;
+  }
+
+
+  .lab {
+    display: block;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+
+  .lab-number {
+    margin-bottom: 45px;
+
+    font-size: 78px;
+  }
+
+
+  .lab:hover .lab-number {
+    transform: none;
+  }
+
+
+  .lab-content h2 {
+    font-size: clamp(46px, 15vw, 70px);
+  }
+
+
+  .lab-flow {
+    padding-right: 0;
+  }
+
+
+  .lab-flow::after {
+    display: none;
+  }
+
+
+  .labs-ecosystem {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+
+  .labs-ecosystem h2,
+  .labs-partners h2 {
+    font-size: clamp(48px, 15vw, 78px);
+  }
+
+
+  .ecosystem-projects article {
+    min-height: auto;
+
+    padding-top: 28px;
+    padding-bottom: 35px;
+  }
+
+
+  .labs-partners {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+
+
+  .partner-flow {
+    flex-direction: column;
+
+    padding: 30px 10px;
+  }
+
+
+  .partner-flow span {
+    transform: rotate(90deg);
+  }
+
+}
