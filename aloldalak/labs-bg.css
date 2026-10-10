@@ -1,0 +1,109 @@
+/* =========================================================
+   KREA LABS — DARK IMAGE BACKGROUNDS
+   ========================================================= */
+
+/* Közös háttérbeállítások */
+
+.lab {
+  isolation: isolate;
+}
+
+.lab::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  top: 0;
+  bottom: 0;
+  left: 50%;
+
+  width: 100vw;
+  transform: translateX(-50%);
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(9, 10, 9, 0.94) 0%,
+      rgba(9, 10, 9, 0.82) 45%,
+      rgba(9, 10, 9, 0.65) 100%
+    ),
+    var(--lab-image);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: filter 0.5s ease;
+}
+
+/* Finom világosodás hover esetén */
+
+.lab:hover::before {
+  filter: brightness(1.2);
+}
+
+/* 01 — GRAPHIC LAB */
+
+#graphic-lab {
+  --lab-image: url("../img/ai-generated-8166706_1920-169.png");
+}
+
+/* 02 — 3D LAB */
+
+#haromdelab {
+  --lab-image: url("../img/laserwallp.jpg");
+}
+
+/* 03 — ANIMATION LAB */
+
+#animation-lab {
+  --lab-image: url("../img/wine-619452_1280.jpg");
+}
+
+/* 04 — GAME LAB */
+
+#game-lab {
+  --lab-image: url("../img/playstation-6689793_1280-169.jpg");
+}
+
+/* 05 — MOTION LAB */
+
+#motion-lab {
+  --lab-image: url("../img/neytiri.jpg");
+}
+
+/* 06 — FILM LAB */
+
+#film-lab {
+  --lab-image: url("../img/sony.jpg");
+}
+
+/* 07 — SOUND LAB */
+
+#sound-lab {
+  --lab-image: url("../img/pic_panther-microphone-6799308_1920.jpg");
+}
+
+/* Szövegek olvashatósága */
+
+.lab .lab-number {
+  color: rgba(255, 255, 255, 0.12);
+}
+
+.lab .lab-content h2,
+.lab .lab-lead {
+  color: #f3f1ea;
+}
+
+.lab .lab-content > p:not(.lab-lead) {
+  color: rgba(243, 241, 234, 0.76);
+}
+
+.lab .lab-flow {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.lab .lab-tech span {
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgba(243, 241, 234, 0.75);
+}
