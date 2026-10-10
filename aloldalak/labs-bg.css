@@ -29,6 +29,7 @@
     ),
     var(--lab-image);
 
+  background-attachment: fixed;/*CSAK ENNYIT ÍRTAM HOZZÁ!!!*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
