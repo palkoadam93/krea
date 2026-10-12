@@ -43,8 +43,10 @@
   filter: brightness(1.2);
 }
 
-/* MOTION LAB */
-
+/* GRAPHIC LAB */
+#graphic-lab {
+  --lab-image: url('../img/ai-generated-8166706_1920-169.png');
+}
 
 /* 02 — 3D LAB */
 
