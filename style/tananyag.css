@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg: #f5fffA;
+  --fg: #31574a;
+  --heading: #426c28;
+  --accent: #527d2c;
+  --accent-hover: #365b1d;
+  --link: #4d782d;
+  --line: #c6d7ca;
+  --soft: #e5f0e5;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  margin: 0;
+  color: var(--fg);
+  background-color: var(--bg);
+  font-size: 17px;
+  line-height: 1.65;
+}
+header { color: var(--heading); }
+header img {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  max-width: 20%;
+  height: auto;
+  margin: 1rem auto 0;
+  box-shadow: 5px 5px #d8e8d6;
+}
+header h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-shadow: 2px 2px 3px rgba(30,60,30,.12);
+  padding: 3rem 0;
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+}
+.menu { background-color: var(--accent); overflow: hidden; }
+.menu a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.menu a:hover, #akt { background-color: var(--bg); color: var(--accent-hover); }
+main { padding: 1rem; }
+aside { position: sticky; top: 1rem; align-self: start; }
+aside h1, aside p { padding-left: .5rem; }
+aside a, section a, article a { text-decoration: none; color: var(--link); }
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav a { color: var(--fg); display: block; text-decoration: none; padding: .5rem; font-size: 100%; }
+nav a:hover { color: var(--accent-hover); background: var(--soft); }
+hr { margin: 0; border: 0; border-top: 1px solid var(--line); }
+#aktiv { background-color: var(--accent); color: white; }
+#aktiv:hover { background-color: var(--accent-hover); color: white; }
+section { min-width: 0; }
+section h1 { color: var(--heading); line-height: 1.25; margin-top: 2.2rem; scroll-margin-top: 2rem; }
+section h1:first-child { margin-top: 1rem; }
+section a:hover { text-decoration: underline; }
+/* A tartalomjegyzék minden eleme külön sorban szerepel. */
+#t {
+  display: block;
+  list-style-type: circle;
+  padding-left: 1.8rem;
+  margin: .5rem 0 2rem;
+  border-bottom: 1px dotted var(--line);
+  font-variant: small-caps;
+  padding-bottom: 1rem;
+  columns: 1;
+}
+#t li { display: list-item; width: auto; margin: .3rem 0; break-inside: avoid; }
+#t a { display: inline; padding: 0; background: none; border: 0; }
+h3 { border-bottom: 1px solid var(--line); color: var(--fg); margin-top: 1.8rem; }
+#kezdolap h3, article h3 { border-bottom: none; }
+code, pre { font-family: Consolas, 'Courier New', monospace; }
+code { background: var(--soft); color: #294e32; padding: .12em .3em; border-radius: 3px; overflow-wrap: anywhere; }
+pre { background: #e9f1e9; border-left: 3px solid var(--accent); padding: 1rem; overflow-x: auto; }
+pre code { padding: 0; background: transparent; overflow-wrap: normal; }
+iframe { display: block; margin: auto; max-width: 100%; }
+section img { max-width: 100%; height: auto; }
+footer { border-top: 1px solid var(--line); padding: 1rem; color: var(--heading); }
+footer img { display: block; width: 7rem; margin: auto; }
+footer p { text-align: center; font-weight: bold; }
+footer a { text-decoration: none; color: var(--link); }
+footer a:hover { background-color: var(--accent); color: white; transition: .5s; }
+#zaro { color: var(--heading); font-weight: bold; }
+@media (min-width: 1081px) {
+  header { padding: 0 10%; }
+  header a { padding: 2rem 0; }
+  .menu { padding-left: 10%; padding-right: 10%; display: flex; position: sticky; top: 0; z-index: 2; }
+  .menu a { border-left: 1px solid rgba(255,255,255,.4); flex: 1; }
+  main { display: grid; grid-template-columns: 20% minmax(0, 80%); padding: 0 10%; }
+  section { padding: 0 2rem; }
+  section p, section li { text-align: justify; }
+}
+@media (max-width: 1080px) {
+  aside { position: static; }
+  main { padding: 1rem 5%; }
+  section { padding: 0; }
+  .menu a { float: none; }
+  header h1 { padding: 2rem 1rem; }
+}
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  section p, section li { text-align: left; }
+  header img { max-width: 35%; }
+}

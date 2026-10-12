@@ -1,0 +1,5 @@
+document.querySelector('.menu')?.addEventListener(
+    'click',
+    ()=>document.querySelector('.top nav')
+        ?.classList.toggle('open')
+    );
