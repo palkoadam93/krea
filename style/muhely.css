@@ -297,6 +297,15 @@ a {
     background-attachment: fixed;
 }
 
+#motion {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('../img/prehistoric-1142403_1280-169.png');
+    background-position: top;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 #game {
     background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url('../img/game.jpg');
     background-position: top;
